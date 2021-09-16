@@ -1,11 +1,14 @@
-  h1{
-        color: red;
-        font-size: 60px;
+body{
+        background-color: grey;
+}
+h1{
+        color: white;
+        font-size: 75px;
         text-align: center;
         }
  h2{
-        color: greenyellow;
-        font-size: 35px;
+        color: red;
+        font-size: 45px;
         text-align: center;
         }
 h3{
@@ -13,13 +16,13 @@ h3{
         text-align: center;
 }
 p{
-        color: red;
+        color: white;
         font-size: 28px;
         text-align: center;
 }
 
 address{
-        color: blue;
-        font-size: 12px;
+        color: white;
+        font-size: 20px;
         text-align: center;
 }
