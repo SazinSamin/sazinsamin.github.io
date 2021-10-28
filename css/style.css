@@ -1,10 +1,165 @@
 body{
-        font-family: 'Cormorant Garamond', serif;
+        background-color: rgb(45, 206, 221);
 }
 
+
 h1{
-        font-size: 40px;
+        font-size: 120px;
+        color: rgb(46, 0, 251);
+        text-align: center;
+        font-family: 'Cormorant Garamond', serif;
+        padding-right: 50px;
+        padding-top: 70px;
+}
+
+p{
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        color: blue;
+}
+
+#primary_decription{
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        color: blue;
+        font-size: 25px;
+        padding: 15px;
+        padding-bottom: 30px;
+}
+
+
+.imgClass{
+        height: 500px;
+        width: 500px;
+}
+
+.ProvNavbarText{
+        font-size: 30px;
+}
+
+
+
+.skill_container{
+        background-color: blue;
+        color: white;
+        font-size: 20px;
+}
+
+.skill_container h1{
+        color: rgb(45, 206, 221);
+}
+
+.skill_container p, a{
+        color: white;
+        
+}
+
+.education_section{
+        background-color: rgb(45, 206, 221);
+}
+
+.education_section h1{
+        color: blue;
+        font-size: 100px;
+        font-weight: bold;
+}
+
+
+.education_circle{
+        background-color: rgb(45, 206, 221);
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+}
+
+.education_details{
+        text-align: center;
+        color: white;
+        padding-bottom: 40px;
+}
+
+.cirtificate_container{
+        text-align: center;
+        color: white;
+}
+
+cirtificate_container h1{
+        color: blue;
+}
+
+
+
+
+.project_container{
+        background-color: blue;
+        padding-left: 100px;
+        align-items: center;
+        text-align: center;
+}
+
+.project_container h1{
+        padding-bottom: 40px;
+        color: rgb(45, 206, 221);
+}
+
+
+.project_container, .col-4{
+        padding-bottom: 50px;
+        align-items: center;
+        text-align: center;
+}
+
+
+
+.contact_container{
+        background-color: rgb(45, 206, 221);
+        padding-left: 100px;
+        align-items: center;
+        text-align: center;
+}
+
+
+.contact_container h1{
         color: blue;
         text-align: center;
-        
+}
+
+.inner_form{
+        background-color: white;
+}
+
+
+.col_contact_message{
+        padding-right: 100px;
+        padding-bottom: 50px;
+}
+
+.button_message{
+        padding-bottom: 50px;
+}
+
+
+.footer{
+        background-color: blue;
+}
+
+.iconCircle{
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: inline-block;
+        background-color: white;
+        font-size: 40px;
+        text-align: center;
+        color: blue;
+}
+
+
+.iconCircle :hover{
+        width: 70px;
+        height: 70px;
+        border-radius: 20%;
+        display: inline-block;
+        background-color: white;
+        font-size: 40px;
+        text-align: center;
+        color: green;
 }

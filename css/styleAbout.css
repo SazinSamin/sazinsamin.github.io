@@ -1,0 +1,16 @@
+body{
+        background-color: aqua;
+}
+
+h1, h2, h3, p{
+        color: blue;
+        text-align: center;
+}
+
+h1{
+        font-size: 100px;
+}
+
+.container{
+        padding-top: 100px;
+}
