@@ -8,9 +8,11 @@ body{
 
 h1{
   font-size: 60px;
+  color: rgb(24, 226, 253);
 }
 
 #temperature{
+  color: yellow;  
   font-weight: bold;
   font-size: 100px;
 }
