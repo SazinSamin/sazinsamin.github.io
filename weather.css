@@ -1,18 +1,49 @@
 body{
-  background-color: rgb(56, 110, 6);
+  background-color: #00203FFF;
   color: white;
   text-align: center;
   font-size: 27px;
   font-family: 'Courier New', Courier, monospace;
+  color: #ADEFD1FF;
 }
 
 h1{
   font-size: 60px;
-  color: rgb(24, 226, 253);
+  color: #ADEFD1FF;
 }
 
 #temperature{
   color: yellow;  
   font-weight: bold;
-  font-size: 100px;
+  font-size: 120px;
+  font-style: italic;
+}
+
+
+.parent {
+
+  margin: 1rem;
+  padding: 2rem 2rem;
+  text-align: center;
+}
+
+
+.child {
+  display: inline-block;
+  border: 1px solid rgb(2, 6, 216);
+  padding: 1rem 1rem;
+  vertical-align: middle;
+}
+
+
+
+
+.parent1 {
+  text-align: center;
+}
+
+
+.child1 {
+  display: inline-block;
+  vertical-align: middle;
 }
