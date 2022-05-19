@@ -1,0 +1,16 @@
+body{
+  background-color: rgb(56, 110, 6);
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+h1{
+  font-size: 60px;
+}
+
+#temperature{
+  font-weight: bold;
+  font-size: 100px;
+}
