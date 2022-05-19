@@ -12,6 +12,7 @@ async function fetchData() {
     let humidArr = [];
     let heatIdxArr = [];
     let fieldArr = [];
+
     
 
     for(let x = 1; x <= 4; x++) {
@@ -29,11 +30,18 @@ async function fetchData() {
         }
     }
 
-    console.log(fieldArr);
-    console.log("humidity");
-    console.log(fieldArr[1]);
+    
+    
+    if(fieldArr[1] >= 80) {
+        fieldArr[2] = fieldArr[0] + 2;
+    } else {
+        console.log(fieldArr[2]);
+        fieldArr[2] = fieldArr[0] - 2;
+    }
+    console.log(fieldArr[2]);
+
     const idArr = ['Temperature', 'Humidity', 'Heat index', 'Smoke index'];
-    document.getElementById("temperature").innerHTML = fieldArr[0] + " C";
+    document.getElementById("temperature").innerHTML = fieldArr[0];
     document.getElementById("humidity").innerHTML = idArr[1] + ": " + fieldArr[1] + " %";
     document.getElementById("heat index").innerHTML = idArr[2] + ": " + fieldArr[2] + " C";
     document.getElementById("smoke index").innerHTML = idArr[3] + ": " + fieldArr[3] + " "; 
@@ -49,4 +57,5 @@ async function fetchData() {
 
 
 fetchData();
+
 
