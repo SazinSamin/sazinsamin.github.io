@@ -1,5 +1,5 @@
 async function fetchData() {
-    const res = await fetch("https://api.thingspeak.com/channels/1737377/feeds.json?api_key=PTRM92XMF914F4SV&results=5");
+    const res = await fetch("https://api.thingspeak.com/channels/1737377/feeds.json?api_key=PTRM92XMF914F4SV&results=20");
     let json = await res.json();
     console.log(json);
 
@@ -8,24 +8,30 @@ async function fetchData() {
 
     console.log(json['feeds']);
 
+    let tempArr = [];
+    let humidArr = [];
+    let heatIdxArr = [];
     let fieldArr = [];
+    
 
     for(let x = 1; x <= 4; x++) {
 
-        for(let i = 0; i < 4; i++) {
+        for(let i = 0; i < 20; i++) {
             let data = json['feeds'][i];
 
             // console.log(data);
             let fieldVal = 'field' + x; 
             if(data[fieldVal] != null) {
-                fieldArr.push(data[fieldVal]);
+                // fieldArr.push(data[fieldVal]);
+                fieldArr[x - 1] = data[fieldVal];
             }
         
         }
     }
 
     console.log(fieldArr);
-    console.log(fieldArr[2]);
+    console.log("humidity");
+    console.log(fieldArr[1]);
     const idArr = ['Temperature', 'Humidity', 'Heat index', 'Smoke index'];
     document.getElementById("temperature").innerHTML = fieldArr[0] + " C";
     document.getElementById("humidity").innerHTML = idArr[1] + ": " + fieldArr[1] + " %";
