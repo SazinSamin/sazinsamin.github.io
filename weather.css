@@ -2,26 +2,26 @@ body{
   background-color: #00203FFF;
   color: white;
   text-align: center;
-  font-size: 25px;
+  font-size: 1.5vw;
   font-family: 'Courier New', Courier, monospace;
   color: #ADEFD1FF;
 }
 
 h1{
-  font-size: 60px;
+  font-size: 2vw;
   color: #ADEFD1FF;
 }
 
 #temperature{
   color: yellow;  
   font-weight: bold;
-  font-size: 120px;
+  font-size: 10rem;
   font-style: italic;
+  margin: 0%;
 }
 
 
 .parent {
-
   margin: 1rem;
   padding: 2rem 2rem;
   text-align: center;
@@ -29,6 +29,7 @@ h1{
 
 
 .child {
+  margin: 0%;
   display: inline-block;
   border: 1px solid rgb(2, 6, 216);
   padding: 1rem 1rem;
@@ -44,6 +45,16 @@ h1{
 
 
 .child1 {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+#clock{
+  font-size: 2.2vw;
+}
+
+.child2{
   display: inline-block;
   vertical-align: middle;
 }
