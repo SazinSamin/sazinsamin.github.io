@@ -31,14 +31,13 @@ async function fetchData() {
     }
 
     
-    
+
     if(fieldArr[1] >= 80) {
-        fieldArr[2] = fieldArr[0] + 2;
+        fieldArr[2] = parseInt(fieldArr[0]) + 2;
     } else {
         console.log(fieldArr[2]);
-        fieldArr[2] = fieldArr[0] - 2;
+        fieldArr[2] = parseInt(fieldArr[0]) - 2;
     }
-    console.log(fieldArr[2]);
 
     const idArr = ['Temperature', 'Humidity', 'Heat index', 'Smoke index'];
     document.getElementById("temperature").innerHTML = fieldArr[0];
@@ -51,7 +50,7 @@ async function fetchData() {
     console.log(last_update);
     document.getElementById("last update").innerHTML = last_update;
 
-
+    console.log(currentTime());
 
 }   
 
@@ -59,3 +58,28 @@ async function fetchData() {
 fetchData();
 
 
+function currentTime() {
+    let date = new Date(); 
+    let hh = date.getHours();
+    let mm = date.getMinutes();
+    let ss = date.getSeconds();
+    let session = "AM";
+  
+    if(hh === 0){
+        hh = 12;
+    }
+    if(hh > 12){
+        hh = hh - 12;
+        session = "PM";
+     }
+  
+     hh = (hh < 10) ? "0" + hh : hh;
+     mm = (mm < 10) ? "0" + mm : mm;
+     ss = (ss < 10) ? "0" + ss : ss;
+      
+     let time = hh + ":" + mm + ":" + ss + " " + session;
+  
+    document.getElementById("clock").innerText = time; 
+    let t = setTimeout(function(){ currentTime() }, 1000);
+  }
+  
