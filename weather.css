@@ -51,7 +51,7 @@ h1{
 
 
 #clock{
-  font-size: 2.2vw;
+  font-size: 2.5vw;
 }
 
 .child2{
@@ -65,4 +65,9 @@ h1{
   border: 0%;
   margin: 0%;
   font-size: 1vw;
+}
+
+
+#ff{
+  color: rgb(117, 184, 9);
 }
