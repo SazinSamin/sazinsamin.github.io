@@ -2,7 +2,7 @@ body{
   background-color: #00203FFF;
   color: white;
   text-align: center;
-  font-size: 1.3vw;
+  font-size: 1.1vw;
   font-family: 'Courier New', Courier, monospace;
   color: #ADEFD1FF;
 }
@@ -15,7 +15,7 @@ h1{
 #temperature{
   color: yellow;  
   font-weight: bold;
-  font-size: 8rem;
+  font-size: 7rem;
   font-style: italic;
   margin: 0%;
 }
