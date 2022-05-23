@@ -25,13 +25,16 @@ h1{
   margin: 1rem;
   padding: 2rem 2rem;
   text-align: center;
+  margin: 0%;
 }
 
 
 .child {
+  border-radius: 10%;
+  border: 0ch;
   margin: 0%;
   display: inline-block;
-  border: 1px solid rgb(2, 6, 216);
+  border: 5px dotted rgb(2, 1, 216);
   padding: 1rem 1rem;
   vertical-align: middle;
 }
@@ -51,6 +54,7 @@ h1{
 
 
 #clock{
+  color: greenyellow;
   font-size: 2.5vw;
 }
 
@@ -71,3 +75,10 @@ h1{
 #ff{
   color: rgb(117, 184, 9);
 }
+
+
+
+
+
+
+
