@@ -43,7 +43,7 @@ async function fetchData() {
     document.getElementById("temperature").innerHTML = fieldArr[0];
     document.getElementById("humidity").innerHTML = idArr[1] + ": " + fieldArr[1] + " %";
     document.getElementById("heat index").innerHTML = idArr[2] + ": " + fieldArr[2] + " C";
-    document.getElementById("smoke index").innerHTML = idArr[3] + ": " + (fieldArr[3] - 830) + " "; 
+    document.getElementById("smoke index").innerHTML = idArr[3] + ": " + (fieldArr[3]) + " "; 
     document.getElementById("pressure").innerHTML = idArr[4] + ": " + fieldArr[4] + " kPa"; 
     document.getElementById("altitude").innerHTML = idArr[5] + ": " + fieldArr[5] + " m"; 
     document.getElementById("s_pressure").innerHTML = idArr[6] + ": " + (parseFloat(fieldArr[6]) - parseFloat(0.1)) + " kpa"; 
