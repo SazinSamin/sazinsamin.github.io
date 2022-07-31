@@ -1,3 +1,4 @@
+
 async function fetchData() {
     const res = await fetch("https://api.thingspeak.com/channels/1737377/feeds.json?api_key=PTRM92XMF914F4SV&results=20");
     let json = await res.json();
