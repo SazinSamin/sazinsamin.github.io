@@ -8,7 +8,7 @@ const fetchData = async () => {
                 let insertData = {
                         id: json[i].id,
                         time: json[i].time,
-                        payload: json[i].payload != undefined ? json[i].payload.toString().replace(/u0000/g, '').replace(/\\+/g, '')
+                        payload: json[i].payload != undefined ? json[i].payload.toString().replace(/\\u0000/g, '').replace(/\\/g, '').replace(/\\/g, '')
                                 : '',
                 };
 
