@@ -5,11 +5,8 @@ async function fetchData() {
     let json = await res.json();
     console.log(json);
 
-
-
-
     console.log(json['feeds']);
-
+    
     let tempArr = [];
     let humidArr = [];
     let heatIdxArr = [];

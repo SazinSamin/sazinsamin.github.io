@@ -57,11 +57,11 @@ const colorObj = {
 
 
 
-
+charts.resize =  function () {
         window.addEventListener('resize', function () {
                 plotTemp();
         })
-
+};
 
 
 export default charts;
