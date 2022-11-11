@@ -18,6 +18,7 @@ const userCardHtml = `<h1 id="title">Patient Detials</h1>
                 <h2 class="patient_info_right">Assigned Doctor: Meghboron Paul(873436)</h2>
         </div>
 </div>`;
+
 console.log("run");
 const userCard = document.createElement("p");
 userCard.innerHTML = userCardHtml;
