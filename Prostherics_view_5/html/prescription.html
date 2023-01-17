@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/prescription.css">
+        <!-- <script src="../js/prescription.js"></script> -->
+        <title>Document</title>
+</head>
+<body>
+        <div class="left">
+                <h1 id="title1">Prescription</h1>
+                <form id="prescription_form">
+                        <!-- <label for="prescription">Prescription: </label> -->
+                        <br>
+                        <input type="text" id="prescription" name="prescription">
+                        <br>
+                        <p>Default email: sazinsamin50@gmail.com</p>
+                        <p>***Please check your spam folder as this is a sysmtem generated mail</p>
+                        <label for="email" id="email_label">Email:</label>
+                        <input type="email" id="email" name="email"><br>
+                        <h2 id="message_status"></h2>
+                        <input type="submit" id="submit_button" value="Submit">
+                </form>
+        </div>
+
+        <div class="right">
+                <h2>Previous Prescription</h2>
+                <div id="prescription_list">
+                        <h1>
+                                <div class="prescription_item">
+                                        <p>Date: 'Sat Nov 26 2022 11:32:45 GMT+0600 (Bangladesh Standard Time)'</p>
+                                        <p>Prescription: Take more vitamin</p>
+                                </div>
+                        </h1>
+                        <h1>
+                                <div class="prescription_item">
+                                        <p>Date: 'Sat Jan 2022 11:32:45 GMT+0600 (Bangladesh Standard Time)'</p>
+                                        <p>Prescription: Sleep properly</p>
+                                </div>
+                        </h1>
+                </div>
+        </div>        
+        
+        <script type="module" src="../js/prescription/prescription.js"></script>
+</body>
+</html>

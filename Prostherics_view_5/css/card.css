@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@300&family=Mali:ital,wght@1,300&display=swap');
+
+body {
+        margin: 0%;
+        /* color: rgb(3, 214, 207); */
+        color: yellowgreen;
+        background-color: #00203FFF;
+        font-size: 1.7vh;
+        font-family: fantasy
+}
+
+.main_container {
+        background-color: #00203FFF;
+        display: flex;
+}
+
+.sidebar {
+        background-color: rgb(19, 12, 95);
+        width: 20%;
+        height: 100vh;
+        text-align: center;
+        border-right: 0.5vw groove rgb(10, 222, 162);
+        border: 3px ridge rgb(20, 39, 133);
+        border-top-right-radius: 10%;
+}
+
+.sidebar_title {
+        color: rgb(19, 12, 95);
+        background-color: rgb(10, 222, 162);
+        border-radius: 3%;
+        /* border: 1vw double rgb(19, 12, 95); */
+        margin-top: 20%;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 30%;
+        box-shadow: -10px 10px 10px rgb(0, 0, 0)
+}
+
+.sidebar_item {
+        margin-left: 20%;
+        margin-right: 20%;
+        /* background-color: rgb(255, 0, 68); */
+        border-bottom: 0.2vw dotted rgb(3, 214, 207);
+}
+
+
+
+.content {
+        padding: 2%;
+        margin: 0%;
+        height: 100vh;
+        width: 100%;
+        background-color: #00203FFF;
+        align-items: center;
+        text-align: center;
+}
+
+#header_title {
+        font-size: 2.5vw;
+        margin: 0%;
+}
+
+#header_sub_title {
+        margin: 0%;
+        color: orange;
+}
+
+#header_group {
+        margin: 0%;
+}
+
+#card {
+        border-radius: 2%;
+        border: 0ch;
+        margin: 1%;
+        display: inline-block;
+        border: 0.2vw outset rgb(2, 1, 216);
+        padding: 1rem 1rem;
+        vertical-align: middle;
+        transition: border 0.3s, background-color 0.5s;
+        box-shadow: -15px 20px 10px rgb(0, 0, 0);
+        /* box-shadow: -10px 10px 10px rgb(10, 222, 162), */
+        /* 10px -10px 10px rgba(0, 0, 255, 0.5); */
+        width: 80%;
+}
+
+#title {
+        margin: 0%;
+}
+
+.patient_info {
+        display: flex;
+}
+
+.left {
+        width: 50%;
+        border-right: 0.2vw solid rgb(3, 214, 207);
+}
+
+.right {
+        width: 50%;
+}
+
+img {
+        width: 30%;
+        height: 40%;
+        border-radius: 50%;
+        overflow: hidden;
+}
+
+.patient_info_right {
+        margin: 0%;
+}
+
+.patient_info_left {
+        margin: 0%;
+}
+
+.child {
+        border-radius: 5%;
+        border: 0ch;
+        margin-top: 1.5%;
+        margin-right: 1%;
+        display: inline-block;
+        border: 3px ridge rgb(2, 1, 216);
+        padding: 1rem 1rem;
+        vertical-align: middle;
+        font-size: 1.5vw;
+        color: orange;
+}
