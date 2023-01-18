@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/child.css">
+        <link rel="stylesheet" href="./css/charts.css">
+        <link rel="stylesheet" href="./css/style.css">
+        <title>Smart Healthcare with Prosthetics</title>
+</head>
+<body>
+        <div class="main_container">
+                <div class="sidebar">
+                         <h1 id="clock">00:00:00 PM</h1>
+                        <div class="sidebar_patiend_info", id="sidebar_patiend_info">
+                                <img src="./img/sazin_img.jpeg" id="sidebar_img" alt="Patient Image">
+                                <h1 id="sidebar_name">Sazin Reshed Samin</h1>
+                                <h3 id="sidebar_id">Id: 021191011</h3>
+                        </div>
+                        <h1 class="sidebar_title">Menu</h1>
+                        <div class="sidebar_content">
+                                <h2 class="sidebar_item" id="sidebar_item_stat">Statistics</h2>
+                                <h2 class="sidebar_item" id="sidebar_item_prescription">Prescription</h2>
+                                <h2 class="sidebar_item" id="sidebar_item_incident">Incident Report</h2>
+                                <h2 class="sidebar_item" id="sidebar_item_telemedicine">Telemedicine</h2>
+                                <h2 class="sidebar_item" id="sidebar_item_attachment">Attachment</h2>
+                                <h2 class="sidebar_item" id="sidebar_item_about">About</h2>
+                        </div>
+                </div>
+
+
+
+                <div class="content">
+                        <h1 id="header_title">Smart Healthcare Monitoring system</h1>
+                        <h1 id="header_sub_title">A Part of Human Prosthetics with Sense</h1>
+                        <h2 id="header_group">Group-6, Capstone, <span id="uiu">United International University</span></h2>
+
+                        
+                        <!-- <div class="parent">
+                                <h3 class="child" id="Charge">Charge(%) <div class="" id="chargeRadialbar"></div></h3>
+                                <h3 class="child" id="Temperature">Temperature(c) <div class="" id="tempRadialbar"></div> </h3>
+                                <h3 class="child" id="Pulse">Pulse(b/p)  <span id="pulseSpan">0</span></h3>
+                                <h3 class="child" id="Oxygen">Oxygen(%) <span id="oxySpan">0</span></h3>
+                        </div>  -->
+                        
+
+                        <div class="radialbar">
+                                <div class="childRadial">
+                                        <h3>Temp(F)</h3>
+                                        <div id="tempRadialbar"></div>
+                                </div>
+                                <div class="childRadial">
+                                        <h3>Pulse(B/m)</h3>
+                                        <div id="pulseRadialbar"></div>
+                                </div>
+                                <div class="childRadial">
+                                        <h3>Oxygen(mm^3)</h3>
+                                        <div id="oxygenRadialbar"></div>
+                                </div>
+                                <div class="childRadial">
+                                        <h3>Incident</h3>
+                                        <div  id="chargeRadialbar"></div>
+                                </div>
+                        </div>
+                        
+
+                        
+                        <div class="scatter">
+                                <div class="leftScatter">
+                                        <div class="plot1left" id="tempPlot"><span><h2>Temperature</h2></span></div>
+                                        <div class="plot2left" id="pulsePlot"><span><h2>Pulse</h2></span></div>
+                                </div>
+                                <div class="rightScatter">
+                                        <div class="plot1right" id="oxygenPlot"><span><h2>Oxygen</h2></span></div>
+                                        <div class="plot2right" id="chargePlot"><span><h2>Charge</h2></span></div>
+                                </div>
+                        </div>
+
+
+                        <div class="parent" id="footerX">
+                                <p class="child2" id="last_update">last update: </p>
+                                <p class="child2" id="last update"></p>
+                                <p id="about">©2022 Group-6, Capstone Project, United International University</p>
+                        </div>
+
+
+                        <div id="chart"></div>
+
+
+                </div>
+                <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+                <script type="module" src="./index.js"></script>
+                <script type="module", src="./js/eventListener.js"></script>
+        </div>
+</body>
+</html>
