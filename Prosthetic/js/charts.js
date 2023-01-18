@@ -1,41 +1,54 @@
 const charts = {};
 
-charts.tempChart  = async (dataArr, queryPlot) => {
-                const chartSize = `${window.innerHeight / 3.5}px`;
-                var options = {
-                        series: [{
-                                name: 'Series 1',
-                                data: dataArr.length != 0 ? dataArr : [0],
-                        }],
-                        chart: {
-                                height: chartSize,
-                                type: 'area',
-                        },
-                        dataLabels: {
-                                enabled: true,
-                                style: {
-                                        colors: ['#0f0f0f0f', '#E91E63', '#9C27B0']
-                                }
-                        },
-                        markers: {
+charts.tempChart = async (dataArr, timeArr, queryPlot) => {
+        const chartSize = `${window.innerHeight / 3.5}px`;
+        var options = {
+                series: [{
+                        name: 'Series 1',
+                        data: dataArr.length != 0 ? dataArr : [0],
+                }],
+                chart: {
+                        height: chartSize,
+                        type: 'area',
+                },
+                dataLabels: {
+                        enabled: true,
+                        style: {
                                 colors: ['#0f0f0f0f', '#E91E63', '#9C27B0']
+                        }
+                },
+                markers: {
+                        colors: ['#0f0f0f0f', '#E91E63', '#9C27B0']
+                },
+                fill: {
+                        colors: ['#03fcad', '#E91E63', '#f54275']
+                },
+                stroke: {
+                        curve: 'smooth'
+                },
+                xaxis: {
+                        type: 'category',
+                        // categories: ["2018-09-19T00:00:00.000Z", "2018-09-19T01:30:00.000Z", "2018-09-19T02:30:00.000Z", "2018-09-19T03:30:00.000Z", "2018-09-19T04:30:00.000Z", "2018-09-19T05:30:00.000Z", "2018-09-19T06:30:00.000Z"],       
+                        categories: timeArr,
+                        labels: {
+                                style: {
+                                        colors: '#03fcad',
+                                }
+                        }
+                },
+                yaxis: {
+                        labels: {
+                                style: {
+                                        colors: '#03fcad',
+                                }
+                        }
+                },
+                tooltip: {
+                        x: {
+                                format: 'dd/MM/yy HH:mm'
                         },
-                        fill: {
-                                colors: ['#03fcad', '#E91E63', '#f54275']
-                        },
-                        stroke: {
-                                curve: 'smooth'
-                        },
-                        xaxis: {
-                                type: 'datetime',
-                                categories: ["2018-09-19T00:00:00.000Z", "2018-09-19T01:30:00.000Z", "2018-09-19T02:30:00.000Z", "2018-09-19T03:30:00.000Z", "2018-09-19T04:30:00.000Z", "2018-09-19T05:30:00.000Z", "2018-09-19T06:30:00.000Z"],                                
-                        },
-                        tooltip: {
-                                x: {
-                                        format: 'dd/MM/yy HH:mm'
-                                }, 
-                        },
-                };
+                },
+        };
 
         var chart = new ApexCharts(document.querySelector(queryPlot), options);
         chart.render();
@@ -73,7 +86,7 @@ charts.radialBar = (val, selectedQuery) => {
                                         }
                                 },
                                 track: {
-                                        background: val >15 ? '#fff' : '#eb3461',
+                                        background: val > 15 ? '#fff' : '#eb3461',
                                         strokeWidth: '67%',
                                         margin: 0, // margin is in pixels
                                         dropShadow: {

@@ -1,6 +1,7 @@
 import charts from "./js/charts.js";
+import fetchObj from "./js/fetch/fetchData.js";
 
-const dataArr =  [31, 40, 28, 51, 42, 109, 100];
+// const dataArr =  [31, 40, 28, 51, 42, 109, 100];
 
 
 const removeMyChild = (selectedQuery) => {
@@ -10,27 +11,31 @@ const removeMyChild = (selectedQuery) => {
 
 
 const fetchData =  async () => {
-        /*
-        const res = await fetch("https://localhost:3000");
-        let json = await res.json();
-        console.log(json);
-        */
 
-
-
+        // const res = await fetch("http://localhost:3000/last");
+        // let json = await res.json();
+        let data = [];
+        // data = preprocessing.makeArrayofData(json);
+        data = await fetchObj.fetchDataLast10();
+        // console.log(data['time']);
 
         // removeMyChild("chargeRadialbar");
 
-        // charts.radialBar("0", "#chargeRadialbar");
-        charts.radialBar("25", "#tempRadialbar");
-        charts.radialBar("45", "#pulseRadialbar");
-        charts.radialBar("95", "#oxygenRadialbar");
+        charts.radialBar("3", "#chargeRadialbar");
+        charts.radialBar(data['temp'][data['temp'].length - 1], "#tempRadialbar");
+        charts.radialBar(data['pulse'][data['pulse'].length - 1], "#pulseRadialbar");
+        charts.radialBar(data['oxygen'][data['oxygen'].length - 1], "#oxygenRadialbar");
 
-        charts.tempChart(dataArr, "#tempPlot");
-        charts.tempChart(dataArr, "#pulsePlot");
-        // charts.tempChart(dataArr, "#chargePlot");
-        charts.tempChart(dataArr, "#oxygenPlot");        
+        charts.tempChart(data['temp'], data['time'], "#tempPlot");
+        charts.tempChart(data['pulse'], data['time'], "#pulsePlot");
+        charts.tempChart(data['oxygen'], data['time'], "#oxygenPlot");        
+        // charts.tempChart(dataArr, "#chargePlot");        
 
+
+        let lastUpdate = document.getElementById('last_update');
+        lastUpdate.innerHTML = `Last date fetched from database at: ${new Date().toUTCString()}`;
+
+        
 }
 
 

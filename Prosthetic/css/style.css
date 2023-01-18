@@ -58,6 +58,7 @@ body{
         border-radius: 20%;
         margin: 5%;
         background-color: var(--darkblue);
+        border: 0.1vw ridge blue;
 }
 
 .sidebar_item {
@@ -145,4 +146,8 @@ img {
 
 #uiu {
         color: rgb(247, 133, 3);
+}
+
+#footerX {
+        font-size: 1.5vw;
 }

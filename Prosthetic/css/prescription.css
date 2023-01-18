@@ -83,3 +83,7 @@ p{
 p{
         margin: 0%;
 }
+
+#default_email {
+        font-size: 1.5vw;
+}
