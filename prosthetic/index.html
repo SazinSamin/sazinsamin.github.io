@@ -4,17 +4,28 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <title>Document</title>
+        <link rel="stylesheet" href="./css/child.css">
+        <link rel="stylesheet" href="./css/charts.css">
+        <link rel="stylesheet" href="./css/style.css">
+        <title>Smart Healthcare with Prosthetics</title>
 </head>
 <body>
         <div class="main_container">
                 <div class="sidebar">
+                         <h1 id="clock">00:00:00 PM</h1>
+                        <div class="sidebar_patiend_info", id="sidebar_patiend_info">
+                                <img src="./img/sazin_img.jpeg" id="sidebar_img" alt="Patient Image">
+                                <h1 id="sidebar_name">Sazin Reshed Samin</h1>
+                                <h3 id="sidebar_id">Id: 021191011</h3>
+                        </div>
                         <h1 class="sidebar_title">Menu</h1>
                         <div class="sidebar_content">
-                                <h2 class="sidebar_item">Prescription</h2>
-                                <h2 class="sidebar_item">7 days</h2>
-                                <h2 class="sidebar_item">30 days</h2>
+                                <h2 class="sidebar_item" id="sidebar_item_stat">Statistics</h2>
+                                <h2 class="sidebar_item" id="sidebar_item_prescription">Prescription</h2>
+                                <h2 class="sidebar_item" id="sidebar_item_incident">Incident Report</h2>
+                                <h2 class="sidebar_item" id="sidebar_item_telemedicine">Telemedicine</h2>
+                                <h2 class="sidebar_item" id="sidebar_item_attachment">Attachment</h2>
+                                <h2 class="sidebar_item" id="sidebar_item_about">About</h2>
                         </div>
                 </div>
 
@@ -23,68 +34,74 @@
                 <div class="content">
                         <h1 id="header_title">Smart Healthcare Monitoring system</h1>
                         <h1 id="header_sub_title">A Part of Human Prosthetics with Sense</h1>
-                        <h2 id="header_group">Group-6, Capstone, United International University</h2>
+                        <h2 id="header_group">Group-6, Capstone, <span id="uiu">United International University</span></h2>
+
                         
-                        <div id="card">
-                                <h1 id="title">Patient Detials</h1>
-                                <div class="patient_info">
-                                        <div class="left">
-                                                <h1 class="patient_info_left">Personal Information</h1>
-                                                <img src="/img/sazin_img.jpeg" alt="">
-                                                <h2 class="patient_info_left">Name: Sazin Reshed Samin</h2>
-                                                <h3 class="patient_info_left">Patient ID: 021191011</h3>
-                                                <h3 class="patient_info_left">Date of Birth: 01-01-1998</h3>
-                                                <Address class="patient_info_left">Arpara, Kaliganj, Jhenaidah</Address>
+                        <!-- <div class="parent">
+                                <h3 class="child" id="Charge">Charge(%) <div class="" id="chargeRadialbar"></div></h3>
+                                <h3 class="child" id="Temperature">Temperature(c) <div class="" id="tempRadialbar"></div> </h3>
+                                <h3 class="child" id="Pulse">Pulse(b/p)  <span id="pulseSpan">0</span></h3>
+                                <h3 class="child" id="Oxygen">Oxygen(%) <span id="oxySpan">0</span></h3>
+                        </div>  -->
+                        
+
+                        <div class="graph" id="graph">
+                                <div class="radialbar">
+                                        <div class="childRadial">
+                                                <h3>Temp(F)</h3>
+                                                <div id="tempRadialbar"></div>
                                         </div>
-                                        <div class="right">
-                                                <h1 class="patient_info_right">Medical Information</h1>
-                                                <h2 class="patient_info_right">Age: 24</h2>
-                                                <h2 class="patient_info_right">Sex: Male</h2>
-                                                <h2 class="patient_info_right">Blood group: B+</h2>
-                                                <h2 class="patient_info_right">Wight: 70</h2>
-                                                <h2 class="patient_info_right">Height: 5 feet 10 inch</h2>
-                                                <h2 class="patient_info_right">Assigned Doctor: Meghboron Paul(873436)</h2>
+                                        <div class="childRadial">
+                                                <h3>Pulse(B/m)</h3>
+                                                <div id="pulseRadialbar"></div>
+                                        </div>
+                                        <div class="childRadial">
+                                                <h3>Oxygen(mm^3)</h3>
+                                                <div id="oxygenRadialbar"></div>
+                                        </div>
+                                        <div class="childRadial">
+                                                <h3>Incident</h3>
+                                                <div id="chargeRadialbar"></div>
+                                        </div>
+                                </div>
+                                
+                                
+                                
+                                <div class="scatter">
+                                        <div class="leftScatter">
+                                                <div class="plot1left" id="tempPlot"><span>
+                                                                <h2>Temperature</h2>
+                                                        </span></div>
+                                                <div class="plot2left" id="pulsePlot"><span>
+                                                                <h2>Pulse</h2>
+                                                        </span></div>
+                                        </div>
+                                        <div class="rightScatter">
+                                                <div class="plot1right" id="oxygenPlot"><span>
+                                                                <h2>Oxygen</h2>
+                                                        </span></div>
+                                                <div class="plot2right" id="chargePlot"><span>
+                                                                <h2>Charge</h2>
+                                                        </span></div>
                                         </div>
                                 </div>
                         </div>
 
-                        
-                        <div class="parent1">
-                                <div id="tempChart"></div>
-                        </div>
-                        
-                        
-                        <div class="parent">
-                                <h3 class="child" id="Charge">0</h3>
-                                <h3 class="child" id="Temperature">0</h3>
-                                <h3 class="child" id="Pulse">0</h3>
-                                <h3 class="child" id="Oxygen">0</h3>
-                        </div>
-                        
-                        <!-- <div class="parent">
-                                <h3 class="child" id="pressure">0</h3>
-                                <h3 class="child" id="altitude">0</h3>
-                                <h3 class="child" id="s_pressure">0</h3>
-                        </div> -->
-                        
-                        
-                        <!-- <div class="parent">
-                                <iframe class="child" width="450" height="260" style="border: 1px solid #cccccc;"
-                                        src="https://thingspeak.com/channels/1737377/charts/1?bgcolor=%230097D0&color=%2300203FFF&dynamic=true&results=60&type=spline"></iframe>
-                                <iframe class="child" width="450" height="260" style="border: 1px solid #cccccc;"
-                                        src="https://thingspeak.com/channels/1737377/charts/2?bgcolor=%230097D0&color=%23d62020&dynamic=true&results=60&type=spline"></iframe>
-                        
-                        
-                        </div> -->
-                        
-                        
-                        <div class="parent">
-                                <p class="child2">last update: </p>
+
+                        <div class="parent" id="footerX">
+                                <p class="child2" id="last_update">last update: </p>
                                 <p class="child2" id="last update"></p>
                                 <p id="about">©2022 Group-6, Capstone Project, United International University</p>
                         </div>
+
+
+                        <div id="chart"></div>
+
+
                 </div>
-                <script src="/index.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+                <script type="module" src="./index.js"></script>
+                <script type="module", src="./js/eventListener.js"></script>
         </div>
 </body>
 </html>
