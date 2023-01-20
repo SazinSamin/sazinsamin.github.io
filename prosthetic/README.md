@@ -3,7 +3,7 @@
   - Url: [https://prosthetic-dasboard.onrender.com/prosthetic](https://sazinsamin.github.io/prosthetic/)  
   - Project is under development
   - Technology: Nodejs, Expresss, Mongodb, Render, Javascript, Html, Css, Nodemailer.
-  - Dashboard, email prescription, authometic sensor alert, data visulization, incident logging.
+  - Features: Dashboard, email prescription, authometic sensor alert, data visulization, incident logging.
   
   <img src=https://github.com/SazinSamin/sazinsamin.github.io/blob/master/screenshots/1.png width=70%>  
   <img src=https://github.com/SazinSamin/sazinsamin.github.io/blob/master/screenshots/2.png width=70%>  
