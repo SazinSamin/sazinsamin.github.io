@@ -9,13 +9,19 @@ const removeMyChild = (selectedQuery) => {
         console.log(radialChargebarH1.removeChild(radialChargebarH1.children[0]));
 }
 
+// let counter = 0;
+
 
 const fetchData =  async () => {
 
-        // let graph = document.getElementById('graph');
-        // console.log(graph.children);
-        // graph.removeChild(graph.children[0]);
-        // graph.removeChild(graph.children[0]);
+        // if(counter != 0) {
+        //         let graph = document.getElementById('graph');
+        //         console.log(graph.children);
+        //         graph.removeChild(graph.children[0]);
+        //         graph.removeChild(graph.children[0]);
+        // }
+
+        
 
         // const res = await fetch("http://localhost:3000/last");
         // let json = await res.json();
@@ -36,19 +42,33 @@ const fetchData =  async () => {
         charts.tempChart(data['temp'], data['time'], "#tempPlot");
         charts.tempChart(data['pulse'], data['time'], "#pulsePlot");
         charts.tempChart(data['oxygen'], data['time'], "#oxygenPlot");        
-        // charts.tempChart(dataArr, "#chargePlot");        
 
 
         let lastUpdate = document.getElementById('last_update');
         lastUpdate.innerHTML = `Last date fetched from database at: ${new Date().toUTCString()}`;
 
-      
+        // counter++;
         // setTimeout(fetchData, 5000);
 
 }
 
 
 fetchData();
+
+
+const updateValue = async() => {
+        let data = [];
+        data = await fetchObj.fetchDataLast10();
+        let temp = data['temp'];
+        console.log(data['temp']);
+        // let incidentCount = await fetchObj.getIncidentCount();
+        ApexCharts.exec('graphSeries', 'updateSeries', [{
+                data: [1, 2, 3, 4, 5],
+        }], true);
+        setTimeout(updateValue, 1000);
+}
+
+// updateValue();
 
 
 

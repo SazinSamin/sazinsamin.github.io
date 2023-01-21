@@ -17,7 +17,7 @@ body {
 }
 
 #about_head {
-        font-size: 3vw;
+        /* font-size: 3vw; */
 }
 h1, h2, h3 {
         margin: 0%;
@@ -33,19 +33,26 @@ p {
 
 img {
         width: 12%;
+        border-radius: 2vw;
 }
 
 #member {
         display: inline-block;
 }
 
-#member_img1, #member_img2, #member_img3, #member_img4 {
+
+#a {
         height: 10vw;
         width: 15vw;
-        overflow: hidden;
-        z-index: 1;
-        object-fit: contain;
-        /* border-radius: 500%; */
+        border-radius: 2vw;
+        padding: 1vw;
+}
+
+#member_img1, #member_img2, #member_img3, #member_img4 {
+        height: 10vw;
+        width: 10vw;
+        border-radius: 2vw;
+        padding: 1vw;
 }
 
 #coordinator, #team_members {

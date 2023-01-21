@@ -8,6 +8,7 @@ charts.tempChart = async (dataArr, timeArr, queryPlot) => {
                         data: dataArr.length != 0 ? dataArr : [0],
                 }],
                 chart: {
+                        id: 'graphSeries',
                         height: chartSize,
                         type: 'area',
                 },
@@ -60,6 +61,7 @@ charts.radialBar = (val, selectedQuery) => {
         var options = {
                 series: [val],
                 chart: {
+                        id: 'graphMeter',
                         height: `${window.innerHeight / 3.5}px`,
                         type: 'radialBar',
                         toolbar: {
