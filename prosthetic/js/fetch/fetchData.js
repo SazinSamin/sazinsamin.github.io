@@ -3,7 +3,9 @@ import preprocessing from "./preprocessing.js";
 const fetchObj = {};
 
 fetchObj.fetchDataLast10 = async () => {
-        const res = await fetch("https://prosthetic-dasboard.onrender.com/last");
+        const res = await fetch("https://prosthetic-dasboard.onrender.com/last", {
+        	headers: {'Content-Type':  'application/json'}
+        });
         //const res = await fetch("http://localhost:3000/last");
 
         let json = await res.json();
