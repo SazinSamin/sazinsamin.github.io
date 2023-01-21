@@ -23,8 +23,8 @@ fetchObj.fetchDataAll = async () => {
 }
 
 fetchObj.getIncidentCount = async () => {
-        // const res = await fetch("https://prosthetic-dasboard.onrender.com/incident");
-        const res = await fetch("http://localhost:3000/incident");
+        const res = await fetch("https://prosthetic-dasboard.onrender.com/incident");
+        // const res = await fetch("http://localhost:3000/incident");
         let json = await res.json();
         return json.length;
 }
