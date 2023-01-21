@@ -21,7 +21,7 @@ const sendPrescription = () => {
 
 const sendPostRequest = async(data) => {
         // console.log(data);
-        const url = "http://localhost:3000/prescription";
+        const url = "https://prosthetic-dasboard.onrender.com/prescription";
         addMessageStatus("Processing email Request...");
         fetch(url, {
                 method: "POST",
