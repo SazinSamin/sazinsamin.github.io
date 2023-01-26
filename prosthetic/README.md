@@ -1,4 +1,4 @@
-# IoT basedSmart Heathcare Monitoring System  
+# IoT based Smart Health Monitoring System  
 (Under development)  
 #### Part of Human prosthetic with sense(Final year Capstone project)
 ## Observe patient by monitor sensors data. Have email alert, email based prescription, statistics and visualization of data, user details and telemedicine.  
