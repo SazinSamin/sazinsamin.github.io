@@ -1,7 +1,8 @@
-# IoT based Smart Health Monitoring System  
+# Smart Health Monitoring System  
 (Under development)  
 #### Part of Human prosthetic with sense(Final year Capstone project)
-## Observe patient by monitor sensors data. Have email alert, email based prescription, statistics and visualization of data, user details and telemedicine.  
+## Observe patient by collecting sensors data and saved to the database. Have email alert, email based prescription, statistics and visualization of data, user details and telemedicine.  
+Server - > https://prosthetic-dasboard.onrender.com/, [Code](https://github.com/SazinSamin/prosthetic_server)  
 Frontend: Html, Css, Javascript.  
 Backend: Nodejs, Express, Mongodb, Render.   
 Hardware: Esp32, MAX30100.  
