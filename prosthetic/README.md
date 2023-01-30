@@ -5,7 +5,7 @@
       Have email alert, email based prescription, statistics and visualization of data, 
       user details and telemedicine.  
 ##### Server - > https://prosthetic-dasboard.onrender.com/, (deployed in Render)  
-Server code - >[Code](https://github.com/SazinSamin/prosthetic_server)  
+##### Server code - >[Code](https://github.com/SazinSamin/prosthetic_server)  
 ----------------------------------------------------------
 ##### Frontend: Html, Css, Javascript.  
 ##### Backend: Nodejs, Express, Mongodb, Render.   
