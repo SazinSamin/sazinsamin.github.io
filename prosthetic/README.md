@@ -8,7 +8,7 @@
 ##### Backend Server source code - >[Code](https://github.com/SazinSamin/prosthetic_server)  
 ----------------------------------------------------------
 ##### Frontend: Html, Css, Javascript.  
-##### Backend: Nodejs, Express, Mongodb, Render.   
+##### Backend: Nodejs, Express, Mongodb, Nodemailer, Render.   
 ##### Hardware: Esp32, MAX30100.  
 ------------------------------------------------------------
 <img src=https://github.com/SazinSamin/sazinsamin.github.io/blob/master/screenshots/1.png width=70%>  
