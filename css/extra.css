@@ -1,0 +1,19 @@
+#about_me {
+        margin: 0%;
+        font-size: 1.9vw;
+        text-align: center;
+}
+
+#samin {
+        margin: 0%;
+        font-size: 4.5vw;
+}
+
+.links {
+        display: inline-block;
+}
+
+#link {
+        display: inline-block;
+        margin: 0%;
+}

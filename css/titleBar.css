@@ -1,0 +1,24 @@
+.titleBarUl {
+        /* display: inline-block; */
+        /* padding-left: 20vh; */
+        padding-left: 50%;
+        position: absolute;
+        width: 100%;
+        height: 6vh;
+        /* background-color: blue; */
+        background: rgb(74, 1, 233, 0.1);
+        margin: 0%;
+        text-shadow: 3px 3px 20px #0217ff,
+        -2px 1px 30px #001eff;
+        box-shadow: 1vw 1vw 5vw rgba(73, 10, 210, 0.912);
+}
+
+#titleBarLi {
+        text-shadow: 1vw;
+        font-size: 1.5vw;
+        margin-top: 0.5vw;
+        margin-bottom: 0.5vw;
+        display: inline-block;
+        padding-left: 5vh;
+        /* background-color: blue; */
+}
