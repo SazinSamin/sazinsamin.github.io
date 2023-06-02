@@ -12,6 +12,7 @@
 ##### Backend: Nodejs, Express, Mongodb, Nodemailer, Render.   
 ##### Hardware: Esp32, MAX30100.  
 ------------------------------------------------------------
+<img src=https://github.com/SazinSamin/sazinsamin.github.io/blob/master/prosthetic/img/poster.png width=70%>  
 <img src=https://github.com/SazinSamin/sazinsamin.github.io/blob/master/screenshots/1.png width=70%>  
 <img src=https://github.com/SazinSamin/sazinsamin.github.io/blob/master/screenshots/2.png width=70%>  
 <img src=https://github.com/SazinSamin/sazinsamin.github.io/blob/master/screenshots/3.png width=70%>  
